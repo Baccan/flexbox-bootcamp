@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+#app {
+  /* por padrão, alinha os itens horizontalmente */
+  display: flex;
+
+  /* padrão: row */
+  flex-direction: column;
+
+  /* padrão: flex-start */
+  /* Alinha sempre ao eixo contrario do flex-direction */
+  align-items: center;
+
+  /* padrão: flex-start */
+  /* space-between e space-around não funcionam em align-items */
+  justify-content: center;
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  background: #f00;
+  margin: 5px;
+}

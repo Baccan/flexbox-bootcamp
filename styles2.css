@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+#app {
+  /* por padrão, alinha os itens horizontalmente */
+  display: flex;
+}
+
+.box {
+  width: 300px;
+  height: 60px;
+  background: #f00;
+  margin: 5px;
+
+  /* padrão: 0 */
+  /* Estica o tamanho dos elementos com relação ao tamanho do container (elemento pai) */
+  /* flex-grow: 0; */
+
+  /* padrão: 1 */
+  /* Não compacta os elementos para caber em tela */
+  /* flex-shrink: 1; */
+
+  /* grow e flex no mesmo elemento */
+  flex: 1 1;
+}

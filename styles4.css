@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+#app {
+  /* por padrão, alinha os itens horizontalmente */
+  display: flex;
+}
+
+.box {
+  width: 240px;
+  height: 60px;
+  margin: 5px;
+}
+
+/* Com o order, é possivel definir a order que os elementos devem aparecer em tela */
+.red {
+  background: #f00;
+  order: 1;
+}
+
+.green {
+  background: #0f0;
+  order: 2;
+}
+
+.blue {
+  background: #00f;
+  order: 0;
+}

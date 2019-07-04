@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+#app {
+  /* por padrão, alinha os itens horizontalmente */
+  display: flex;
+
+  /* quebra a linha dos elementos para caber na tela */
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: space-between;
+
+  /* Alinha os elementos quando possuem mais de uma linha */
+  align-content: center;
+}
+
+.box {
+  width: 240px;
+  height: 60px;
+  background: #f00;
+  margin: 5px;
+}
